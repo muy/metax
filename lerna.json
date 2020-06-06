@@ -1,0 +1,15 @@
+{
+  "command": {
+    "init": {
+      "exact": true
+    },
+    "publish": {
+      "message": "chore: publish npm packages by lerna [ci skip]"
+    }
+  },
+  "npmClient": "npm",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "1.1.0"
+}

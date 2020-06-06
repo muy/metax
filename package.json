@@ -1,0 +1,60 @@
+{
+  "name": "metax-root",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Add SEO and other metadata tags to your Gatsby website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna exec --parallel -- rollup -c",
+    "dev": "npm run watch",
+    "develop": "npm run watch",
+    "husky:precommit": "npm run test",
+    "husky:prepush": "npm run test",
+    "lerna:install": "lerna bootstrap",
+    "lerna:publish": "lerna publish --conventional-commits --cd-version=$LERNA_LEVEL --yes",
+    "lerna:test": "lerna run test",
+    "pretest": "npm run build",
+    "prewatch": "npm run lerna:install",
+    "publish-all": "npm run lerna:publish",
+    "start": "npm run watch",
+    "test": "npm run lerna:test",
+    "watch": "lerna exec --parallel -- rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muy/metax.git"
+  },
+  "keywords": [
+    "metax",
+    "muy",
+    "seo",
+    "metadata",
+    "tags",
+    "gatsby",
+    "web"
+  ],
+  "author": "Metax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muy/metax/issues"
+  },
+  "homepage": "https://github.com/muy/metax#readme",
+  "devDependencies": {
+    "@babel/preset-env": "7.10.2",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-commonjs": "12.0.0",
+    "@rollup/plugin-node-resolve": "8.0.0",
+    "husky": "4.2.5",
+    "jest": "26.0.1",
+    "lerna": "3.22.0",
+    "rollup": "2.12.0",
+    "rollup-plugin-babel": "4.4.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-json": "^4.0.3"
+  },
+  "husky": {
+    "pre-commit": "npm run husky:precommit",
+    "pre-push": "npm run husky:prepush"
+  }
+}

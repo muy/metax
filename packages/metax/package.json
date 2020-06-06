@@ -1,0 +1,51 @@
+{
+  "name": "metax",
+  "displayName": "Metax",
+  "version": "1.1.0",
+  "private": false,
+  "description": "Add SEO and other metadata tags to your Gatsby website.",
+  "keywords": [
+    "metax",
+    "gatsby",
+    "seo",
+    "metatags",
+    "meta"
+  ],
+  "author": "Metax",
+  "homepage": "https://github.com/muy/metax/tree/master/packages/metax#readme",
+  "license": "ISC",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muy/metax.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "testb": "jest --runInBand",
+    "testc": "jest --coverage",
+    "testu": "jest -u",
+    "testw": "jest --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/muy/metax/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "gatsby": "2.22.13",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-helmet": "6.0.0"
+  }
+}
