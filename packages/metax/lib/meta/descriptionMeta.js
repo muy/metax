@@ -10,5 +10,5 @@ const descriptionMeta = ({ content }) => ({
 export default descriptionMeta
 
 descriptionMeta.propTypes = {
-  content: PropTypes.string,
+  content: PropTypes.string.isRequired,
 }
