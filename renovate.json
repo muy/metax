@@ -1,0 +1,36 @@
+{
+  "assignees": ["jimmyandrade"],
+  "enabled": true,
+  "extends": [
+    "config:base"
+  ],
+  "labels": ["dependencies", "renovate"],
+  "masterIssue": true,
+  "masterIssueAutoclose": true,
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "updateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "packagePatterns": ["^eslint"],
+      "groupName": "eslint packages"
+    },
+    {
+      "packagePatterns": ["eslint"],
+      "labels": ["linting"]
+    }
+  ],
+  "reviewers": ["jimmyandrade"],
+  "schedule": ["every weekend"],
+  "semanticCommits": true,
+  "stabilityDays": 16,
+  "unicodeEmoji": true,
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}
