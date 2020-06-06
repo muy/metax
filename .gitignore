@@ -4,7 +4,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# lerna temp files
 lerna-debug.log*
+package-lock.json.lerna_backup
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -104,3 +107,7 @@ packages/*/dist
 
 # TernJS port file
 .tern-port
+
+# Stryker temp files
+.stryker-tmp
+reports/mutation/html
