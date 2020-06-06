@@ -1,0 +1,3 @@
+# Stryker temp files
+.stryker-tmp
+reports/mutation/html
