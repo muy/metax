@@ -65,7 +65,9 @@
     "@rollup/plugin-json": "^4.0.3"
   },
   "husky": {
-    "pre-commit": "npm run husky:precommit",
-    "pre-push": "npm run husky:prepush"
+    "hooks": {
+      "pre-commit": "npm run husky:precommit",
+      "pre-push": "npm run husky:prepush"
+    }
   }
 }
