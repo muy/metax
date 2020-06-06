@@ -1,28 +1,39 @@
 {
   "name": "metax-root",
-  "version": "1.0.0",
-  "private": false,
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/metax"
+    ]
+  },
   "description": "Add SEO and other metadata tags to your Gatsby website.",
   "main": "index.js",
   "scripts": {
+    "bootstrap": "npm run lerna:install",
     "build": "lerna exec --parallel -- rollup -c",
+    "clean": "lerna clean",
+    "commit": "npx git cz",
     "dev": "npm run watch",
     "develop": "npm run watch",
     "husky:precommit": "npm run test",
     "husky:prepush": "npm run test",
     "lerna:install": "lerna bootstrap",
+    "lerna:prerelease": "lerna version --conventional-commits --conventional-prerelease",
     "lerna:publish": "lerna publish --conventional-commits --cd-version=$LERNA_LEVEL --yes",
+    "lerna:release": "lerna version --conventional-commits",
     "lerna:test": "lerna run test",
+    "postinstall": "npm run lerna:install",
     "pretest": "npm run build",
     "prewatch": "npm run lerna:install",
     "publish-all": "npm run lerna:publish",
+    "semantic-release": "semantic-release",
     "start": "npm run watch",
     "test": "npm run lerna:test",
     "watch": "lerna exec --parallel -- rollup -c -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muy/metax.git"
+    "url": "https://github.com/muy/metax.git"
   },
   "keywords": [
     "metax",
@@ -41,20 +52,32 @@
   "homepage": "https://github.com/muy/metax#readme",
   "devDependencies": {
     "@babel/preset-env": "7.10.2",
-    "@rollup/plugin-babel": "^5.0.2",
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@rollup/plugin-babel": "5.0.2",
     "@rollup/plugin-commonjs": "12.0.0",
+    "@rollup/plugin-json": "4.0.3",
     "@rollup/plugin-node-resolve": "8.0.1",
+    "commitizen": "4.1.2",
+    "cz-conventional-changelog": "3.2.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lerna": "3.22.0",
     "rollup": "2.12.0",
-    "rollup-plugin-babel": "4.4.0"
-  },
-  "dependencies": {
-    "@rollup/plugin-json": "^4.0.3"
+    "rollup-plugin-babel": "4.4.0",
+    "semantic-release": "17.0.8"
   },
   "husky": {
-    "pre-commit": "npm run husky:precommit",
-    "pre-push": "npm run husky:prepush"
-  }
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run husky:precommit",
+      "pre-push": "npm run husky:prepush"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "version": "0.0.0-development"
 }

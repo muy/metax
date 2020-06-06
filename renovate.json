@@ -26,6 +26,7 @@
     }
   ],
   "reviewers": ["jimmyandrade"],
+  "schedule": ["every weekend"],
   "semanticCommits": true,
   "stabilityDays": 16,
   "unicodeEmoji": true,
