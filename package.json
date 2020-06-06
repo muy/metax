@@ -26,13 +26,14 @@
     "pretest": "npm run build",
     "prewatch": "npm run lerna:install",
     "publish-all": "npm run lerna:publish",
+    "semantic-release": "semantic-release",
     "start": "npm run watch",
     "test": "npm run lerna:test",
     "watch": "lerna exec --parallel -- rollup -c -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muy/metax.git"
+    "url": "https://github.com/muy/metax.git"
   },
   "keywords": [
     "metax",
@@ -55,18 +56,16 @@
     "@commitlint/config-conventional": "8.3.4",
     "@rollup/plugin-babel": "5.0.2",
     "@rollup/plugin-commonjs": "13.0.0",
-    "@rollup/plugin-node-resolve": "8.0.0",
+    "@rollup/plugin-node-resolve": "8.0.1",
+    "@rollup/plugin-json": "4.0.3",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lerna": "3.22.0",
-    "rollup": "2.12.0",
+    "rollup": "2.13.1",
     "rollup-plugin-babel": "4.4.0",
     "semantic-release": "17.0.8"
-  },
-  "dependencies": {
-    "@rollup/plugin-json": "4.0.3"
   },
   "husky": {
     "hooks": {
@@ -79,5 +78,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "version": "0.0.0-development"
 }
