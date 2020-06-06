@@ -26,13 +26,14 @@
     "pretest": "npm run build",
     "prewatch": "npm run lerna:install",
     "publish-all": "npm run lerna:publish",
+    "semantic-release": "semantic-release",
     "start": "npm run watch",
     "test": "npm run lerna:test",
     "watch": "lerna exec --parallel -- rollup -c -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muy/metax.git"
+    "url": "https://github.com/muy/metax.git"
   },
   "keywords": [
     "metax",
@@ -79,5 +80,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "version": "0.0.0-development"
 }
