@@ -30,6 +30,9 @@
     "url": "git+https://github.com/muy/metax.git"
   },
   "scripts": {
+    "stryker:init": "stryker init",
+    "stryker:report": "open reports/mutation/html/index.html",
+    "stryker:run": "stryker run",
     "test": "jest",
     "testb": "jest --runInBand",
     "testc": "jest --coverage",
@@ -43,7 +46,11 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "gatsby": "2.23.1",
+    "@babel/preset-react": "7.10.1",
+    "@stryker-mutator/babel-transpiler": "^3.2.4",
+    "@stryker-mutator/core": "^3.2.4",
+    "@stryker-mutator/javascript-mutator": "^3.2.4",
+    "@stryker-mutator/jest-runner": "^3.2.4",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-helmet": "6.0.0"
