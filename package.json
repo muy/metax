@@ -1,11 +1,19 @@
 {
   "name": "metax-root",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/metax"
+    ]
+  },
   "description": "Add SEO and other metadata tags to your Gatsby website.",
   "main": "index.js",
   "scripts": {
+    "bootstrap": "npm run lerna:install",
     "build": "lerna exec --parallel -- rollup -c",
+    "clean": "lerna clean",
+    "commit": "git cz",
     "dev": "npm run watch",
     "develop": "npm run watch",
     "husky:precommit": "npm run test",
@@ -19,6 +27,7 @@
     "publish-all": "npm run lerna:publish",
     "start": "npm run watch",
     "test": "npm run lerna:test",
+    "version": "echo $npm_package_version",
     "watch": "lerna exec --parallel -- rollup -c -w"
   },
   "repository": {
@@ -45,6 +54,7 @@
     "@rollup/plugin-babel": "^5.0.2",
     "@rollup/plugin-commonjs": "12.0.0",
     "@rollup/plugin-node-resolve": "8.0.0",
+    "commitizen": "4.1.2",
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lerna": "3.22.0",
