@@ -39,11 +39,13 @@ import twitterSiteMeta from "../meta/twitterSiteMeta"
 import twitterTitleMeta from "../meta/twitterTitleMeta"
 import twitterUrlMeta from "../meta/twitterUrlMeta"
 import versionMeta from "../meta/versionMeta"
+import {appStoreAppMeta} from "../meta/appStoreAppMeta";
 
 const getMetaProps = (props = {}) => {
   let metaProps = {}
 
   const {
+    appStoreApp,
     applicationName,
     applicationUrl = props.siteUrl,
     applicationTileImage,
@@ -132,6 +134,10 @@ const getMetaProps = (props = {}) => {
     (metaProps.applicationTooltip = applicationTooltipMeta({
       content: applicationTooltip,
     }))
+  appStoreApp && (metaProps.appStoreApp = appStoreAppMeta({
+    content: appStoreApp,
+  }))
+
 
   if (audio) {
     audio.url && (metaProps.ogAudio = ogAudioMeta({ content: audio.url }))
