@@ -1,6 +1,5 @@
 {
   "name": "metax-root",
-  "version": "1.0.0",
   "private": true,
   "workspaces": {
     "packages": [
@@ -29,7 +28,6 @@
     "publish-all": "npm run lerna:publish",
     "start": "npm run watch",
     "test": "npm run lerna:test",
-    "version": "echo $npm_package_version",
     "watch": "lerna exec --parallel -- rollup -c -w"
   },
   "repository": {
