@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/muy/metax/compare/v1.3.0...v1.2.1) (2020-06-07)
+
+
+### Bug Fixes
+
+* **deps:** try to adopt semantic-release-monorepo ([0929abe](https://github.com/muy/metax/commit/0929abe876b3da3518e788e0b3c4e2b4383f5ac2))
+* **travis:** add version branches to safelist ([7122b9c](https://github.com/muy/metax/commit/7122b9c69ac420dbeffca5a045e0d767d7b43816))
+
+
+
+
+
 # 1.2.0-alpha.0 (2020-06-06)
 
 
