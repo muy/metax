@@ -64,7 +64,7 @@
     "husky": "4.2.5",
     "jest": "26.0.1",
     "lerna": "3.22.1",
-    "rollup": "2.17.1",
+    "rollup": "2.20.0",
     "rollup-plugin-babel": "4.4.0",
     "semantic-release": "17.0.8",
     "semantic-release-monorepo": "7.0.2"
