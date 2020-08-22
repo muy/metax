@@ -62,7 +62,7 @@
     "cz-conventional-changelog": "3.2.0",
     "cz-lerna-changelog": "2.0.3",
     "husky": "4.2.5",
-    "jest": "26.4.0",
+    "jest": "26.4.1",
     "lerna": "3.22.1",
     "rollup": "2.26.3",
     "rollup-plugin-babel": "4.4.0",
