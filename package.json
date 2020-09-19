@@ -67,7 +67,7 @@
     "rollup": "2.27.1",
     "rollup-plugin-babel": "4.4.0",
     "semantic-release": "17.1.2",
-    "semantic-release-monorepo": "7.0.2"
+    "semantic-release-monorepo": "7.0.3"
   },
   "husky": {
     "hooks": {
