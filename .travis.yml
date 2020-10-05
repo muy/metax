@@ -1,16 +1,27 @@
+language: node_js
+os: linux
+dist: xenial
+node_js:
+  - lts/*
+cache:
+  directories:
+    - node_modules
+git:
+  quiet: true
 branches:
   only:
     - master
     - /^v?\d+\.\d+(\.\d+)?(-\S*)?$/
-language: node_js
 jobs:
   include:
     - stage: release
+      name: "Release"
+      if: type = push AND branch = master
       node_js: lts/*
       deploy:
         provider: script
         script:
           - "npm run lerna:release && npm run lerna:publish"
         skip_cleanup: true
-node_js:
-  - node
+        on:
+          branch: master
