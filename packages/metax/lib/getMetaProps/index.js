@@ -40,6 +40,7 @@ import twitterTitleMeta from "../meta/twitterTitleMeta"
 import twitterUrlMeta from "../meta/twitterUrlMeta"
 import versionMeta from "../meta/versionMeta"
 import {appStoreAppMeta} from "../meta/appStoreAppMeta";
+import applicationUrlMeta from "../meta/applicationUrlMeta";
 
 const getMetaProps = (props = {}) => {
   let metaProps = {}
