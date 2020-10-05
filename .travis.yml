@@ -11,5 +11,6 @@ jobs:
         provider: script
         script:
           - "npm run lerna:release && npm run lerna:publish"
+        skip_cleanup: true
 node_js:
   - node
