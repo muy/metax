@@ -10,6 +10,6 @@ jobs:
       deploy:
         provider: script
         script:
-          - npx semantic-release
+          - "npm run lerna:release && npm run lerna:publish"
 node_js:
   - node
