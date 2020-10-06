@@ -4,12 +4,6 @@ os: linux
 dist: xenial
 node_js:
   - lts/*
-cache:
-  directories:
-    - "node_modules"
-    - "packages/metax/node_modules"
-  npm: false
-  yarn: false
 notifications:
   email: false
 git:
