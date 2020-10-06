@@ -18,6 +18,8 @@ branches:
   only:
     - master
     - /^v?\d+\.\d+(\.\d+)?(-\S*)?$/
+before_install:
+  - "npm install -g npm@latest"
 install:
   - "npm ci"
 before_script:
