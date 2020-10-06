@@ -34,6 +34,7 @@
     "lerna-prerelease": "npm run lerna-version -- --conventional-prerelease --no-changelog",
     "lerna-prerelease-ci": "npm run lerna-prerelease -- --force-git-tag --force-publish --yes",
     "lerna-publish": "lerna publish from-git --ignore-prepublish",
+    "lerna-publish-ci": "npm run lerna-publish -- --yes",
     "lerna-release": "npm run lerna-version -- --allow-branch master",
     "lerna-release-ci": "npm run lerna-release -- --create-release github --force-publish --yes",
     "lerna-version": "lerna version --conventional-commits",
