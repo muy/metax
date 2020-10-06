@@ -1,3 +1,4 @@
+---
 language: node_js
 os: linux
 dist: xenial
@@ -5,23 +6,35 @@ node_js:
   - lts/*
 cache:
   directories:
-    - node_modules
+    - "node_modules"
+    - "packages/metax/node_modules"
+  npm: true
+  yarn: false
+notifications:
+  email: false
 git:
   quiet: true
 branches:
   only:
     - master
     - /^v?\d+\.\d+(\.\d+)?(-\S*)?$/
+install:
+  - "npm ci"
+before_script:
+  - "npm run bootstrap"
 jobs:
   include:
+    - stage: confidence-check
+      if: type = push AND branch != master
+      name: "Confidence check"
+      script: npm test
     - stage: release
       name: "Release"
       if: type = push AND branch = master
-      node_js: lts/*
+      script: skip
       deploy:
-        provider: script
-        script:
-          - "npm run lerna:release && npm run lerna:publish"
-        skip_cleanup: true
-        on:
-          branch: master
+        - provider: script
+          script: "npm run lerna:release && npm run lerna:publish"
+          skip_cleanup: true
+          on:
+            branch: master
