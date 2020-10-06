@@ -8,7 +8,7 @@ cache:
   directories:
     - "node_modules"
     - "packages/metax/node_modules"
-  npm: true
+  npm: false
   yarn: false
 notifications:
   email: false
