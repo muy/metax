@@ -30,7 +30,7 @@ jobs:
       script: skip
       deploy:
         - provider: script
-          script: "npm run lerna:release && npm run lerna:publish"
+          script: "npm run lerna-release-ci && npm run lerna-publish-ci"
           skip_cleanup: true
           on:
             branch: master
