@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.2 (2020-10-06)
+
+
+### Bug Fixes
+
+* **metax:** prevent error when using applicationUrlMeta ([132b220](https://github.com/muy/metax/commit/132b2203e45d83bc7a403cd3058bee204f3306ac))
+
+
+
+
+
 ## [1.2.1](https://github.com/muy/metax/compare/v1.3.0...v1.2.1) (2020-06-07)
 
 
