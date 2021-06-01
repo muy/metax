@@ -64,7 +64,7 @@
     "cz-lerna-changelog": "2.0.3",
     "husky": "4.3.8",
     "jest": "27.0.3",
-    "lerna": "3.22.1",
+    "lerna": "4.0.0",
     "lerna-changelog": "1.0.1",
     "rollup": "2.50.5",
     "rollup-plugin-babel": "4.4.0"
