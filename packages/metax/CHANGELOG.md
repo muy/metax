@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.109](https://github.com/muy/metax/compare/v1.2.108...v1.2.109) (2021-06-19)
+
+**Note:** Version bump only for package metax
+
+
+
+
+
 ## [1.2.108](https://github.com/muy/metax/compare/v1.2.107...v1.2.108) (2021-06-12)
 
 **Note:** Version bump only for package metax
