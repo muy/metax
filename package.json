@@ -66,7 +66,7 @@
     "jest": "27.0.6",
     "lerna": "4.0.0",
     "lerna-changelog": "1.0.1",
-    "rollup": "2.52.7",
+    "rollup": "2.53.0",
     "rollup-plugin-babel": "4.4.0"
   },
   "config": {
