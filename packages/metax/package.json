@@ -1,7 +1,7 @@
 {
   "name": "metax",
   "displayName": "Metax",
-  "version": "1.2.135",
+  "version": "1.2.136",
   "private": false,
   "description": "Add SEO and other metadata tags to your Gatsby website.",
   "keywords": [
