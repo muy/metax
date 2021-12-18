@@ -46,7 +46,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@babel/preset-react": "7.16.0",
+    "@babel/preset-react": "7.16.5",
     "@stryker-mutator/babel-transpiler": "4.0.0",
     "@stryker-mutator/core": "5.5.1",
     "@stryker-mutator/javascript-mutator": "4.0.0",
