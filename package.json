@@ -59,7 +59,7 @@
     "@rollup/plugin-commonjs": "20.0.0",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.3.0",
-    "commitizen": "4.2.4",
+    "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "cz-lerna-changelog": "2.0.3",
     "husky": "7.0.4",
